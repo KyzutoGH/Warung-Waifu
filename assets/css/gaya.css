@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: Arial, sans-serif;
+    background-image: url("../../assets/gambar/mioakiyama/Akiyama.Mio.full.3122910.jpg"),
+      url("../../assets/gambar/katomegumi/Katou.Megumi.full.3123499.png");
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 30%;
+  }
+  .header,
+  .footer {
+    background-color: #ded9c3;
+    height: 200px;
+    width: 784px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    background-color: #b1a1c6;
+    height: 100px;
+  }
+  .konten {
+    display: flex;
+    width: 784px;
+    justify-content: space-between;
+  }
+  .daftarkonten {
+    background-color: #f2eadd;
+    width: 200px;
+    height: auto;
+  }
+  .kotenutama {
+    background-color: #d2ad8c;
+    width: 584px;
+    height: auto;
+  }
+  .daftarisi {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 16px;
+  }
+  #tabelasi {
+    width: 100%;
+    height: 100%;
+  }
+  .pala {
+    text-align: center;
+  }
+  .fakta {
+    width: 25%;
+  }
+  .gambar {
+    padding: 5%;
+  }
+  .aktif {
+    color: red;
+  }
+  .bagidua {
+    width: 50%;
+  }
+  #inputan {
+    width: 98%;
+  }
+  #playButton,
+  #pauseButton,
+  #stopButton,
+  #prevButton,
+  #nextButton {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  #musicTitle {
+    font-size: 18px;
+    margin: 0 10px;
+  }

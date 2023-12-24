@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        background-image: url("../assets/gambar/mioakiyama/Akiyama.Mio.full.3122910.jpg"),
+          url("../assets/gambar/katomegumi/Katou.Megumi.full.3123499.png");
+        background-position: left top, right top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 30%;
+      }
+      .header,
+      .footer {
+        background-color: #ded9c3;
+        height: 200px;
+        width: 784px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        background-color: #b1a1c6;
+        height: 100px;
+      }
+      .konten {
+        display: flex;
+        width: 784px;
+        justify-content: space-between;
+      }
+      .daftarkonten {
+        background-color: #f2eadd;
+        width: 200px;
+        height: auto;
+      }
+      .kotenutama {
+        background-color: #d2ad8c;
+        width: 584px;
+        height: auto;
+      }
+      .daftarisi {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+      }
+      #tabelasi {
+        width: 100%;
+      }
+      tr {
+        width: auto;
+      }
+      .pala {
+        text-align: center;
+      }
+      .fakta {
+        width: 25%;
+      }
+      .gambar {
+        padding: 5%;
+      }
+      .aktif {
+        color: red;
+      }
+
+      #playButton,
+      #pauseButton,
+      #stopButton,
+      #prevButton,
+      #nextButton {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #musicTitle {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+    </style>
+    <title>KyzutoXT Site's</title>
+  </head>
+  <body>
+    <div class="header">
+      <audio id="backgroundMusic" style="display: none">
+        <source id="musicSource" type="audio/mp3" />
+      </audio>
+      <div id="musicControls">
+        <button id="prevButton">Previous</button>
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <button id="stopButton">Stop</button>
+        <button id="nextButton">Next</button>
+      </div>
+      <marquee behavior="scroll" direction="left">
+        <h3 id="musicTitle">Selamat Datang di Website Saya</h3>
+      </marquee>
+    </div>
+    <div class="konten">
+      <div class="daftarkonten">
+        <h1 class="pala">Daftar Isi</h1>
+        <ul class="daftarisi">
+          <h4 class="aktif">Personal</h4>
+          <li><a href="personal.html">Personal Data</a></li>
+          <li><a href="pengalaman.html">Pendidikan dan Pengalaman</a></li>
+        </ul>
+        <ul class="daftarisi">
+          <h4>Konten Waifu</h4>
+          <li><a href="../Waifu/waifu.html">Apa itu Waifu?</a></li>
+          <li><a href="../Waifu/mioakiyama.html">Mio Akiyama</a></li>
+          <li><a href="../Waifu/hutao.html">Hu Tao</a></li>
+          <li><a href="../Waifu/azusanakano.html">Azusa Nakano</a></li>
+          <li><a href="../Waifu/katoumegumi.html">Katou Megumi</a></li>
+          <li><a href="../Waifu/mikunakano.html">Miku Nakano</a></li>
+          <li><a href="../Waifu/march7th.html">March 7th</a></li>
+          <li><a href="../Waifu/koito.html">Minase Koito</a></li>
+          <li><a href="../Waifu/maika.html">Maika Sakuranomiya</a></li>
+          <li><a href="../Waifu/perbandingan.html">Waifu vs Nyata</a></li>
+        </ul>
+        <ul class="daftarisi">
+          <li><a href="../index.html">Beranda</a></li>
+        </ul>
+      </div>
+      <div class="kotenutama">
+        <table border="1" id="tabelasi">
+          <tr>
+            <th colspan="2">Pendidikan</th>
+          </tr>
+          <tr>
+            <td>2008 - 2014</td>
+            <td>SDN Kepanjen 1</td>
+          </tr>
+          <tr>
+            <td>2014 - 2017</td>
+            <td>SMPN 4 Kepanjen</td>
+          </tr>
+          <tr>
+            <td>2017 - 2020</td>
+            <td>SMK Brantas Karangkates</td>
+          </tr>
+          <tr>
+            <td>2022 - sekarang</td>
+            <td>Universitas Islam Balitar</td>
+          </tr>
+          <tr>
+            <th colspan="2">Pengalaman Kerja & Magang</th>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>Magang di PT. Universal Big Data as Back End Developer</td>
+          </tr>
+          <tr>
+            <td>2019 - 2022</td>
+            <td>Seller Tokopedia</td>
+          </tr>
+          <tr>
+            <td>2020 - now</td>
+            <td>Konten Kreator di Exynos Channel</td>
+          </tr>
+          <tr>
+            <td>2023 - sekarang</td>
+            <td>Streamer di Exynos Channel</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <h4 class="agensi" style="text-align: center;"></h4>
+    </div>
+    <script src="../assets/JAVScript/musikbackgroundintern.js"></script>
+  </body>
+</html>

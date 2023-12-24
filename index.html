@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        background-image: url("assets/gambar/mioakiyama/Akiyama.Mio.full.3122910.jpg"),
+          url("assets/gambar/katomegumi/Katou.Megumi.full.3123499.png");
+        background-position: left top, right top;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 30%;
+      }
+      .header {
+        background-image: url("assets/gambar/random/backgroundheader.png");
+        background-size: 40%;
+      }
+      .footer {
+        background-image: url("assets/gambar/random/backgroundfooter.png");
+        background-size: 40%;
+      }
+      .header,
+      .footer {
+        background-color: #f9c2ff;
+        height: 200px;
+        width: 784px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer {
+        height: 100px;
+      }
+      .konten {
+        display: flex;
+        width: 784px;
+        justify-content: space-between;
+      }
+      .daftarkonten {
+        background-color: #f2eadd;
+        width: 200px;
+        height: auto;
+      }
+      .kotenutama {
+        background-color: #d2ad8c;
+        width: 584px;
+        height: auto;
+      }
+      .daftarisi {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        font-size: 16px;
+      }
+      #tabelasi {
+        width: 100%;
+        height: 100%;
+      }
+      .pala {
+        text-align: center;
+      }
+      .fakta {
+        font-size: 16px;
+      }
+      #musicControls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      #playButton,
+      #pauseButton,
+      #stopButton,
+      #prevButton,
+      #nextButton {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #musicTitle {
+        font-size: 18px;
+        margin: 0 10px;
+      }
+    </style>
+    <title>KyzutoXT Site's</title>
+  </head>
+  <body>
+    <div class="header">
+      <audio id="backgroundMusic" style="display: none">
+        <source id="musicSource" type="audio/mp3" />
+      </audio>
+      <div id="musicControls">
+        <button id="prevButton">Previous</button>
+        <button id="playButton">Play</button>
+        <button id="pauseButton">Pause</button>
+        <button id="stopButton">Stop</button>
+        <button id="nextButton">Next</button>
+      </div>
+      <marquee behavior="scroll" direction="left">
+        <h3 id="musicTitle">Selamat Datang di Website Saya</h3>
+      </marquee>
+    </div>
+    <div class="konten">
+      <div class="daftarkonten">
+        <h1 class="pala">Daftar Isi</h1>
+        <ul class="daftarisi">
+          <h4>Personal</h4>
+          <li><a href="Personal/personal.html">Personal Data</a></li>
+          <li>
+            <a href="Personal/pengalaman.html">Pendidikan dan Pengalaman</a>
+          </li>
+        </ul>
+        <ul class="daftarisi">
+          <h4>Konten Waifu</h4>
+          <li><a href="Waifu/waifu.html">Apa itu Waifu?</a></li>
+          <li><a href="Waifu/mioakiyama.html">Mio Akiyama</a></li>
+          <li><a href="Waifu/hutao.html">Hu Tao</a></li>
+          <li><a href="Waifu/azusanakano.html">Azusa Nakano</a></li>
+          <li><a href="Waifu/katoumegumi.html">Katou Megumi</a></li>
+          <li><a href="Waifu/mikunakano.html">Miku Nakano</a></li>
+          <li><a href="Waifu/march7th.html">March 7th</a></li>
+          <li><a href="Waifu/koito.html">Minase Koito</a></li>
+          <li><a href="Waifu/maika.html">Maika Sakuranomiya</a></li>
+          <li><a href="Waifu/perbandingan.html">Waifu vs Nyata</a></li>
+          <li><a href="Waifu/request.html">Request Konten Waifu</a></li>
+        </ul>
+        <ul class="daftarisi">
+          <li><a href="index.html">Beranda</a></li>
+        </ul>
+      </div>
+      <div class="kotenutama">
+        <table border="1" id="tabelasi">
+          <tr>
+            <th colspan="2">Fun Fact Random</th>
+          </tr>
+          <tr>
+            <td class="fakta">
+              <ol>
+                <li>Satu hari sama dengan 24 Jam</li>
+                <li>Dua permen milkita setara dengan 80 Kalori</li>
+                <li>
+                  Tiga puluh ribu bisa buat main di mikro 5 jam (Ruang VIP)
+                </li>
+                <li>
+                  Empat orang menjadi kelompok 8 jika yang lain lima orang,
+                  kecuali jika ada yang ribut
+                </li>
+                <li>
+                  Lima waktu untuk sholat adalah hasil dispensasi dari yang
+                  awalnya 50 waktu
+                </li>
+                <li>
+                  Enam hari pada kalender semuanya punya teks warna hitam,
+                  kecuali Minggu/Ahad
+                </li>
+                <li>
+                  Tujuh adalah posisi kebanggaan EVOS dan total kekalahan saya
+                  dalam perbucinan
+                </li>
+                <li>
+                  Delapan giga adalah kapasitas flasdisk saya yang hilang dua
+                  kali
+                </li>
+                <li>Sembilan adalah jumlah peserta MPL ID season 12</li>
+                <li>Sepuluh ribu adalah jatah teman saya untuk beli rokok</li>
+              </ol>
+            </td>
+            <td>
+              <p>Semua fun fact ini hanya bercanda saja hehe.</p>
+              <p>
+                Hanya saja mungkin jika anda emosi lalu membanting sesuatu dan
+                hancur
+              </p>
+              <p>
+                Itu bukan salah saya apalagi salah ibuku hidupku dirundung pilu
+              </p>
+              <p>Sorry malah nyanyi</p>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              "Tidak ada yang mustahil jika mempunyai niat yang kuat"
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="footer">
+      <h4 class="agensi" style="text-align: center"></h4>
+    </div>
+    <script src="assets/JAVScript/musikbackground.js"></script>
+    <script>
+      // Periksa apakah data sudah ada di local storage
+      var nama = localStorage.getItem("nama");
+      var maunya = localStorage.getItem("maunya");
+
+      // Jika data belum ada, tanyakan kepada pengguna
+      if (!nama || !maunya) {
+        nama = prompt("Siapa anda?");
+        maunya = prompt("dan apa yang anda inginkan?");
+
+        // Simpan data ke local storage
+        localStorage.setItem("nama", nama);
+        localStorage.setItem("maunya", maunya);
+
+        // Tampilkan pesan kepada pengguna
+        alert("Halo, " + nama);
+        var konfirmasi = confirm("Apakah benar anda mau " + maunya);
+        if (konfirmasi) {
+          alert("Oke, selamat menikmati konten");
+        } else {
+          alert("Yaudah, selamat menikmati konten");
+        }
+      }
+    </script>
+  </body>
+</html>
