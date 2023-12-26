@@ -96,8 +96,9 @@
                     <td><?php echo $d['nomorid']; ?></td>
                     <td><?php echo $d['keluhan']; ?></td>
                     <td><?php echo $d['alasan']; ?></td>
-                    <td><a href="editkeluhan.php?id=<?php echo $d['idkeluhan'];?>">Edit</a>
-                    <a href="hapuskeluhan.php?id=<?php echo $d['idkeluhan'];?>">Hapus</a></td>
+                    <td><a href="editkeluhan.php?id=<?php echo $d['idkeluhan']; ?>">Edit</a>
+                      <a href="hapuskeluhan.php?id=<?php echo $d['idkeluhan']; ?>">Hapus</a>
+                    </td>
                   </tr>
                 <?php } ?>
               </tbody>

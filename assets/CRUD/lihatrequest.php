@@ -10,7 +10,8 @@
             margin-top: 20px;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #ddd;
             padding: 8px;
             text-align: left;
@@ -55,9 +56,9 @@
             <h1 class="pala">Daftar Isi</h1>
             <ul class="daftarisi">
                 <h4>Personal</h4>
-                <li><a href="../Personal/personal.html">Personal Data</a></li>
+                <li><a href="../../Personal/personal.html">Personal Data</a></li>
                 <li>
-                    <a href="../Personal/pengalaman.html">Pendidikan dan Pengalaman</a>
+                    <a href="../../Personal/pengalaman.html">Pendidikan dan Pengalaman</a>
                 </li>
             </ul>
             <ul class="daftarisi">
@@ -94,6 +95,7 @@
                                 <td>WAIFU</td>
                                 <td>SOURCE</td>
                                 <td>TIPE</td>
+                                <td>U&D</td>
                             </tr>
                             <tr>
                                 <?php
@@ -112,10 +114,13 @@
                                     <td><?php echo $d['waifu']; ?></td>
                                     <td><?php echo $d['saus']; ?></td>
                                     <td><?php echo $d['tipe']; ?></td>
+                                    <td><a href="editrequest.php?id=<?php echo $d['id']; ?>">Edit</a>
+                                        <a href="hapusrequest.php?id=<?php echo $d['id']; ?>">Hapus</a>
+                                    </td>
                             </tr>
                         <?php } ?>
                         <tr>
-                            <td colspan="6">
+                            <td colspan="7">
                                 Mau request juga? <a href="../../Waifu/request.html" class="request-link" style="text-decoration: none;">Request</a>
                             </td>
                         </tr>
